@@ -5,8 +5,8 @@
 		          z-index: 1;
 		          top: 0;
 		          left: 0;
-		          background-color: rgb(0, 0, 0);
-		          background-color: rgba(5, 29, 73, 0.9);
+		         
+		          background-color: rgba(255, 255, 255, 0.9);
 		          overflow-x: hidden;
 		          transition: 0.5s;
 		        }
@@ -39,36 +39,78 @@
 		          right: 45px;
 		          font-size: 60px;
 		        }
-		        @media only screen and (max-width: 1024px) and (min-width: 768px){
-		          .nav li p{
+		        .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+		          color: #fff;
+		          background-color: #007bff;
+		      }
+		      .dropdown-toggle::after{
+		        float: initial !important;
+		        margin-right: 0px;
+		      }
+		
+		        @media only screen and (max-width: 1024px) and (min-width: 768px) {
+		          .nav li p {
 		            font-size: 10px;
 		          }
 		        }
-		        @media only screen and (max-width: 1024px) and (min-width: 451px){
-		          .nav li p{
+		
+		        @media only screen and (max-width: 1024px) and (min-width: 451px) {
+		          .nav li p {
 		            font-size: 10px;
 		          }
+		
 		          .logo {
 		            left: 90%;
 		          }
 		        }
+		
 		        @media screen and (max-width: 450px) {
 		          .overlay a {
 		            font-size: 15px
 		          }
+		
 		          .nav li {
 		            width: 100%;
-		        }
+		            background-color: #337ab7;
+		          }
+		          .dropdown{
+		            background: #337ab7;
+		          }
+		          .nav li a{
+		            color: #fff;
+		            background-color: #fff;
+		            color: blue;
+		            font-family: montserrat1;
+		          }
 		          .overlay .closebtn {
 		            font-size: 40px;
 		            top: 15px;
 		            right: 35px;
 		          }
+		          .overlay-content{
+		            top: 12%;
+		            margin-top: 0px;
+		          }
+		          .dropdown-toggle::after{
+		            float: right;
+		            
+		          }
 		
+		        }
 		
-		        }</style><div id="myNav" class="overlay"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><div class="overlay-content"><nav class="navbar navbar-inverse"><ul class="nav navbar-nav" style="width: 100%"><li class="text-left"><a href="#">Home</a></li><li class="dropdown active text-left"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1</a><ul class="dropdown-menu" style="background: transparent; box-shadow: none; border: 0; padding-left: 15px"><li><a href="#">Page 1-1</a></li><li><a href="#">Page 1-2</a></li><li><a href="#">Page 1-3</a></li></ul></li><li class="text-left"><a href="#">Page 2</a></li></ul></nav></div></div><style>.dropdown-menu {
+		        @media (max-width: 991px) {
+		
+		          #header .header-nav-main:not(.header-nav-main-mobile-dark) nav>ul>li>a.active:focus,
+		          #header .header-nav-main:not(.header-nav-main-mobile-dark) nav>ul>li>a.active:hover {
+		            background: #0088CC;
+		          }
+		        }
+		        .navbar-inverse{
+		          background-color: #fff;
+		          border: none;
+		        }</style><div id="myNav" class="overlay"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><div class="overlay-content"><nav class="navbar navbar-inverse"><ul class="nav navbar-nav" style="width: 100%"><li class="text-left"><a href="#">Trang chủ</a></li><li class="dropdown active text-left"><a class="dropdown-item dropdown-toggle active current-page-active" data-toggle="dropdown" href="#">Giới thiệu</a><ul class="dropdown-menu" style="background: transparent; box-shadow: none; border: 0; padding-left: 15px"><li><a href="#">Về chúng tôi</a></li><li><a href="#">Lịch sử hình thành và phát triển</a></li><li><a href="#">Năng lực và chứng chỉ</a></li><li><a href="#">Hệ thống quản lý chất lượng</a></li><li><a href="#">Sơ đồ tổ chức</a></li><li><a href="#">Tổ chức chính trị - xã hội</a></li><li><a href="#">Quỹ tấm lòng</a></li></ul></li><li class="dropdown active text-left"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dịch vụ</a><ul class="dropdown-menu" style="background: transparent; box-shadow: none; border: 0; padding-left: 15px"><li><a href="#">Giám định thương mại</a></li><li><a href="#">Kiểm định thương mại</a></li><li><a href="#">Thẩm định thương mại</a></li><li><a href="#">Chứng nhận phù hợp</a></li><li><a href="#">Thử nghiệm và kiểm nghiệm</a></li></ul></li><li class="dropdown active text-left"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tin tức</a><ul class="dropdown-menu" style="background: transparent; box-shadow: none; border: 0; padding-left: 15px"><li><a href="#">Tin tức nội bộ</a></li><li><a href="#">Tin tức trong ngành</a></li><li><a href="#">Tin tức chung</a></li><li><a href="#">Văn bản quy phạm</a></li></ul></li><li class="dropdown active text-left"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dự án</a><ul class="dropdown-menu" style="background: transparent; box-shadow: none; border: 0; padding-left: 15px"><li><a href="/du-an">Tất cả dự án</a></li><li><a href="/du-an/nang-luong">Năng lượng</a></li><li><a href="/du-an/khai-khoang">Khai khoáng</a></li><li><a href="/du-an/hoa-chat">Hóa chất</a></li><li><a href="/du-an/sat-thep">Sắt thép</a></li><li><a href="/du-an/xi-mang">Xi măng</a></li></ul></li><li class="text-left"><a href="#">Thành viên</a></li><li class="dropdown active text-left"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tuyển dụng</a><ul class="dropdown-menu" style="background: transparent; box-shadow: none; border: 0; padding-left: 15px"><li><a href="#">Vị trí tuyển dụng</a></li><li><a href="#">Nguyên tắc tuyển dụng</a></li><li><a href="#">Kế hoạch tuyển dụng</a></li></ul></li><li class="text-left"><a href="#">Tra cứu chứng thư</a></li><li class="text-left"><a href="#">Liên hệ</a></li></ul></nav></div></div><style>.dropdown-menu {
 		          margin: -1.2rem;
-		        }</style><div class="col-md-10 style_nav" style="padding-top:3%"><ul class="nav"><li class="vcc vccc"><p><a href="/">TRANG CHỦ</a></p></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GIỚI THIỆU</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/ve-chung-toi"><span style="color:red">-</span> VỀ CHÚNG TÔI</a> <a class="dropdown-item" href="/lich-su-hinh-thanh-va-phat-trien"><span style="color:red">-</span> LỊCH SỬ HÌNH THÀNH & PHÁT TRIỂN</a> <a class="dropdown-item" href="/nang-luc-va-chung-chi"><span style="color:red">-</span> NĂNG LỰC & CHỨNG CHỈ</a> <a class="dropdown-item" href="/he-thong-quan-ly-chat-luong"><span style="color:red">-</span> HỆ THỐNG QUẢN LÝ CHẤT LƯỢNG</a> <a class="dropdown-item" href="/so-do-to-chuc"><span style="color:red">-</span> SƠ ĐỒ TỔ CHỨC</a> <a class="dropdown-item" href="/to-chuc-chinh-tri-xa-hoi"><span style="color:red">-</span> TỔ CHỨC CHÍNH TRỊ - XÃ HỘI</a> <a class="dropdown-item" href="/quy-tam-long"><span style="color:red">-</span> QUỶ TẤM LÒNG</a></div></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="/dich-vu" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DỊCH VỤ</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/giam-dinh-thuong-mai"><span style="color:red">-</span> GIÁM ĐỊNH THƯƠNG MẠI</a> <a class="dropdown-item" href="/kiem-dinh"><span style="color:red">-</span> KIỂM ĐỊNH THƯƠNG MẠI</a> <a class="dropdown-item" href="/tham-dinh"><span style="color:red">-</span> THẨM ĐỊNH THƯƠNG MẠI</a> <a class="dropdown-item" href="/chung-nhan-phu-hop"><span style="color:red">-</span> CHỨNG NHẬN PHÙ HỢP</a> <a class="dropdown-item" href="/thu-nghiem-va-kiem-nghiem"><span style="color:red">-</span> THỬ NGHIỆM VÀ KIỂM NGHIỆM</a></div></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="/tin-tuc">TIN TỨC</a></p><div class="dropdown-menu"><a class="dropdown-item" href="/tin-tuc-noi-bo"><span style="color:red">-</span> TIN TỨC NỘI BỘ</a> <a class="dropdown-item" href="/tin-tuc-trong-nganh"><span style="color:red">-</span> TIN TỨC TRONG NGÀNH</a> <a class="dropdown-item" href="/tin-tuc-chung"><span style="color:red">-</span> TIN TỨC CHUNG</a> <a class="dropdown-item" href="/van-ban-quy-pham"><span style="color:red">-</span> VĂN BẢN QUY PHẠM</a></div></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="#">DỰ ÁN</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/du-an"><span style="color:red">-</span> TẤT CẢ DỰ ÁN</a> <a class="dropdown-item" href="/nang-luong"><span style="color:red">-</span> NĂNG LƯỢNG</a> <a class="dropdown-item" href="/khai-khoang"><span style="color:red">-</span> KHAI KHOÁNG</a> <a class="dropdown-item" href="/hoa-chat"><span style="color:red">-</span> HÓA CHẤT</a> <a class="dropdown-item" href="/sat-thep"><span style="color:red">-</span> SẮT THÉP</a> <a class="dropdown-item" href="/xi-mang"><span style="color:red">-</span> XI MĂNG</a></div></li><li class="nav-item dropdown"><p><a style="color: #0b3262" href="/don-vi-thanh-vien">THÀNH VIÊN</a></p></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="/tuyen-dung">TUYỂN DỤNG</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/vi-tri-tuyen-dung"><span style="color:red">-</span> VỊ TRÍ TUYỂN DỤNG</a> <a class="dropdown-item" href="/nguyen-tac-tuyen-dung"><span style="color:red">-</span>NGUYÊN TẮC TUYỂN DỤNG</a> <a class="dropdown-item" href="/ke-hoach-tuyen-dung"><span style="color:red">-</span> KẾ HOẠCH TUYỂN DỤNG</a></div></li><li class="nav-item dropdown"><p><a style="color: #0b3262" href="/tra-cuu-chung-thu">TRA CỨU CHỨNG THƯ</a></p></li><li class="nav-item dropdown"><p><a style="color: #0b3262" href="/lien-he">LIÊN HỆ</a></p></li></ul></div></div></div></section><script>function openNav() {
+		        }</style><div class="col-md-10 style_nav" style="padding-top:3%"><ul class="nav"><li class="vcc vccc"><p><a href="/">TRANG CHỦ</a></p></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GIỚI THIỆU</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/ve-chung-toi"><span style="color:red">-</span> VỀ CHÚNG TÔI</a> <a class="dropdown-item" href="/lich-su-hinh-thanh-va-phat-trien"><span style="color:red">-</span> LỊCH SỬ HÌNH THÀNH & PHÁT TRIỂN</a> <a class="dropdown-item" href="/nang-luc-va-chung-chi"><span style="color:red">-</span> NĂNG LỰC & CHỨNG CHỈ</a> <a class="dropdown-item" href="/he-thong-quan-ly-chat-luong"><span style="color:red">-</span> HỆ THỐNG QUẢN LÝ CHẤT LƯỢNG</a> <a class="dropdown-item" href="/so-do-to-chuc"><span style="color:red">-</span> SƠ ĐỒ TỔ CHỨC</a> <a class="dropdown-item" href="/to-chuc-chinh-tri-xa-hoi"><span style="color:red">-</span> TỔ CHỨC CHÍNH TRỊ - XÃ HỘI</a> <a class="dropdown-item" href="/quy-tam-long"><span style="color:red">-</span> QUỶ TẤM LÒNG</a></div></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="/dich-vu" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DỊCH VỤ</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/giam-dinh-thuong-mai"><span style="color:red">-</span> GIÁM ĐỊNH THƯƠNG MẠI</a> <a class="dropdown-item" href="/kiem-dinh-thuong-mai"><span style="color:red">-</span> KIỂM ĐỊNH THƯƠNG MẠI</a> <a class="dropdown-item" href="/tham-dinh-thuong-mai"><span style="color:red">-</span> THẨM ĐỊNH THƯƠNG MẠI</a> <a class="dropdown-item" href="/chung-nhan-phu-hop"><span style="color:red">-</span> CHỨNG NHẬN PHÙ HỢP</a> <a class="dropdown-item" href="/thu-nghiem-va-kiem-nghiem"><span style="color:red">-</span> THỬ NGHIỆM VÀ KIỂM NGHIỆM</a></div></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="/tin-tuc">TIN TỨC</a></p><div class="dropdown-menu"><a class="dropdown-item" href="/tin-tuc/tin-tuc-noi-bo"><span style="color:red">-</span> TIN TỨC NỘI BỘ</a> <a class="dropdown-item" href="/tin-tuc/tin-tuc-trong-nganh"><span style="color:red">-</span> TIN TỨC TRONG NGÀNH</a> <a class="dropdown-item" href="/tin-tuc/tin-tuc-chung"><span style="color:red">-</span> TIN TỨC CHUNG</a> <a class="dropdown-item" href="/tin-tuc/van-ban-quy-pham"><span style="color:red">-</span> VĂN BẢN QUY PHẠM</a></div></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="#">DỰ ÁN</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/du-an"><span style="color:red">-</span> TẤT CẢ DỰ ÁN</a> <a class="dropdown-item" href="/du-an/nang-luong"><span style="color:red">-</span> NĂNG LƯỢNG</a> <a class="dropdown-item" href="/du-an/khai-khoang"><span style="color:red">-</span> KHAI KHOÁNG</a> <a class="dropdown-item" href="/du-an/hoa-chat"><span style="color:red">-</span> HÓA CHẤT</a> <a class="dropdown-item" href="/du-an/sat-thep"><span style="color:red">-</span> SẮT THÉP</a> <a class="dropdown-item" href="/du-an/xi-mang"><span style="color:red">-</span> XI MĂNG</a></div></li><li class="nav-item dropdown"><p><a style="color: #0b3262" href="/don-vi-thanh-vien">THÀNH VIÊN</a></p></li><li class="nav-item dropdown"><p><a class="dropdown-toggle" href="/tuyen-dung">TUYỂN DỤNG</a></p><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/vi-tri-tuyen-dung"><span style="color:red">-</span> VỊ TRÍ TUYỂN DỤNG</a> <a class="dropdown-item" href="/nguyen-tac-tuyen-dung"><span style="color:red">-</span>NGUYÊN TẮC TUYỂN DỤNG</a> <a class="dropdown-item" href="/ke-hoach-tuyen-dung"><span style="color:red">-</span> KẾ HOẠCH TUYỂN DỤNG</a></div></li><li class="nav-item dropdown"><p><a style="color: #0b3262" href="/tra-cuu-chung-thu">TRA CỨU CHỨNG THƯ</a></p></li><li class="nav-item dropdown"><p><a style="color: #0b3262" href="/lien-he">LIÊN HỆ</a></p></li></ul></div></div></div></section><script>function openNav() {
 		    document.getElementById("myNav").style.width = "100%";
 		  }
 		
@@ -110,7 +152,17 @@
           }
         .side-menu li:active{
             text-decoration: none !important;
-        }</style><section><div class="container"><div class="row map"><div class="col-md-12"><p style="color:#0b3262">TRANG CHỦ/DỊCH VỤ/GIÁM ĐỊNH</p></div><div class="col-md-4"><h5 class="dmdv" style="color:#0b3262">DANH MỤC DỊCH VỤ</h5><div style="height: 20px"></div><ul class="side-menu"><li class="active tab"><a href="/giam-dinh-thuong-mai"><h5><span style="color:red">-</span> &nbsp; GIÁM ĐỊNH</h5></a></li><li class="tab"><a href="/kiem-dinh"><h5><span style="color:red">-</span> &nbsp; KIỂM ĐỊNH</h5></a></li><li class="tab"><a href="/tham-dinh"><h5><span style="color:red">-</span> &nbsp; THẨM ĐỊNH</h5></a></li><li class="tab"><a href="/chung-nhan-phu-hop"><h5><span style="color:red">-</span> &nbsp; CHỨNG NHẬN PHÙ HỢP</h5></a></li><li class="tab"><a href="/thu-nghiem-va-kiem-nghiem"><h5><span style="color:red">-</span> &nbsp; THỬ NGHIỆM & KIỂM NGHIỆM</h5></a></li></ul><div class="form" style="padding:30px; margin-top:50px; background:#0b3262"><form><div class="row"><div class="col form_1"><h5 style="color:#ff0000">LIÊN HỆ VỚI CHÚNG TÔI</h5><p style="color:#a5a5a5">Để lại thông tin<br>để nhận được tư vấn miễn phí</p><input style="padding-left: 0;
+        }</style><section><div class="container"><div class="row map"><div class="col-md-12"><p style="color:#0b3262">TRANG CHỦ/DỊCH VỤ/GIÁM ĐỊNH</p></div><div class="col-md-4"><h5 class="dmdv" style="color:#0b3262">DANH MỤC DỊCH VỤ</h5><div style="height: 20px"></div><ul class="side-menu"><li class="tab menu-item active"><a href="/giam-dinh-thuong-mai"><h5><span style="color:red">-</span> &nbsp; GIÁM ĐỊNH THƯƠNG MẠI</h5></a></li><li class="tab menu-item"><a href="/kiem-dinh-thuong-mai"><h5><span style="color:red">-</span> &nbsp; KIỂM ĐỊNH THƯƠNG MẠI</h5></a></li><li class="tab menu-item"><a href="/tham-dinh-thuong-mai"><h5><span style="color:red">-</span> &nbsp; THẨM ĐỊNH THƯƠNG MẠI</h5></a></li><li class="tab menu-item"><a href="/chung-nhan-phu-hop"><h5><span style="color:red">-</span> &nbsp;CHỨNG NHẬN PHÙ HỢP</h5></a></li><li class="tab menu-item"><a href="/thu-nghiem-va-kiem-nghiem"><h5><span style="color:red">-</span> &nbsp; THỬ NGHIỆM & KIỂM NGHIỆM</h5></a></li></ul><script language="JavaScript" type="text/javascript" src="/js/jquery.min.js"></script><script>jQuery(window).ready(function() {
+                            jQuery('.menu-item').removeClass('active');
+                            jQuery('.menu-item').each(function() {
+                                var path = window.location.pathname.split("/"),
+                                    href = jQuery(this).find('a').attr('href').split("/"),
+                                    exactMatch = (path[1] === href[1]); 
+                                if (exactMatch) {
+                                    jQuery(this).addClass('active');
+                                }
+                            }); 
+                        });</script><div class="form" style="padding:30px; margin-top:50px; background:#0b3262"><form><div class="row"><div class="col form_1"><h5 style="color:#ff0000">LIÊN HỆ VỚI CHÚNG TÔI</h5><p style="color:#a5a5a5">Để lại thông tin<br>để nhận được tư vấn miễn phí</p><input style="padding-left: 0;
                                         background: transparent;
                                         border: none;
                                         color: #a5a5a5 !important;
@@ -130,7 +182,12 @@
                                         border: none;
                                         color: #a5a5a5 !important;
                                         border-bottom: 1px solid #a5a5a5;
-                                        border-radius: 0" rows="3" type="text" class="form-control" placeholder="Nội dung"></textarea><button style="width: 100%; background-color:#ff0000; color:#fff; font-family:'montserrat1'" type="submit" class="btn mb-2">LIÊN HỆ</button></div></div></form></div></div><div class="col-md-8" style="padding-left:50px"><h5 class="dmdv1" style="color:#0b3262">GIÁM ĐỊNH LÀ GÌ?</h5><p>Theo Luật Chất lượng sản phẩm hàng hóa, Giám định là việc xem xột sự phù hợp của sản phẩm, hàng hóa so với hợp đồng hoặc tiêu chuẩn công bố áp dụng, quy chuẩn kỹ thuật tương ứng bằng cách quan trắc và đánh giá kết quả đo, thử nghiệm.</p><div style="height: 10px"></div><img style="width: 100%" src="/src/image/dichvu1.png"><div style="height: 30px"></div><h5 style="color:#0b3262">2. CÁC LOẠI HÌNH DỊCH VỤ GIÁM ĐỊNH</h5><p>Giám định có nhiều loại hình dịch vụ:<br>- Giám định mọi loại hàng hóa về: quy cách, phẩm chất, tình trạng, số/khối lượng, chủng loại, bao bì, ký/mã hiệu, tổn thất, xuất xứ, độ an toàn, tiêu chuẩn vệ sinh.<br>- Lấy mẫu, phân tích/ thử nghiệm mẫu về hóa, lý…<br>- Giám định phương tiện vận chuyển, thiết bị chứa đựng, kho tàng…<br>- Giám định phục vụ Hải quan, bảo hiểm, môi trường, quản lý thị trường, quản lý chất lượng hàng hóa, điều tra, trọng tài…<br>- Giám sát hang khi giao nhận, vận chuyển, xếp dỡ, lắp ráp…<br>- Kiểm tra các thiết bị đo lường, niêm phong hàng hóa, giám định hợp chuẩn…<br>- Các dịch vụ liên quan: Khử trùng, thẩm định giá, tư vấn và nhiều loại hình dịch vụ liên quan khác.</p><div style="height: 10px"></div><h4 style="color:#0b3262"><span><img src="/src/image/gg1.png"></span>&nbsp; info@eic.com.vn</h4><h4 style="color:#0b3262"><span><img src="/src/image/pp1.png"></span>&nbsp; (+84) 028 3514 9708</h4></div></div></div></section><section class="contact_email" style="background-image: url('/src/image/Rectangle_58.png'); background-size:cover; padding:30px 0"><div class="container"><div class="row"><div class="col-md-3"><input type="text" class="form-control" placeholder="Email"></div><div class="col-md-3"><button style="width: 100%; background-color:#ff0000; color:#fff" type="submit" class="btn mb-2">NHẬN THÔNG TIN >></button></div><div class="col-md-4"><p style="color:#fff; padding-top:10px">ĐĂNG KÝ ĐỂ NHẬN THÔNG TIN TƯ VẤN</p></div></div></div></section><section class="footer" style="border-top:2px solid #ff0000"><div class="container"><div class="row"><div class="col-md-12"><a href="/"><img src="/img/logo.png"></a><div style="height: 30px"></div></div><div class="col-md-4"><div class="f-text"><h6>CÔNG TY CỔ PHẦN VINAVERITAS</h6><img style="width: 100%" src="/src/image/Rectangle53.png"><div style="height: 30px"></div><p><strong style="font-family: 'montserrat1'">Địa chỉ</strong>: Số PF04 - PF06A tầng lửng, Khu 3 (Lô 1.3.1) Toà nhà Topaz 2, 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p><p><b style="font-family: 'montserrat1'">Điện thoại:</b>(+84) 028 3514 9708 * <b style="font-family: 'montserrat1'">Fax:</b> (+84) 028 3514 9709</p><p><b style="font-family: 'montserrat1'">Email </b>: info@eic.com.vn</p></div></div><div class="col-md-4"><div class="f-text"><h6>VỀ VINAVERITAS</h6><img style="width: 100%" src="/src/image/Rectangle53.png"><div style="height: 30px"></div><p><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; TRANG CHỦ</a></p><p><a href="/gioi-thieu"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; GIỚI THIỆU</a></p><p><a href="/dich-vu"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; DỊCH VỤ</a></p><p><a href="/du-an"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; DỰ ÁN</a></p></div></div><style>.footer a:hover {
+                                        border-radius: 0" rows="3" type="text" class="form-control" placeholder="Nội dung"></textarea><button style="width: 100%; background-color:#ff0000; color:#fff; font-family:'montserrat1'" type="submit" class="btn mb-2">LIÊN HỆ</button></div></div></form></div></div><style>.contents p,h1,h2,h3,h4,h5,h6,a,span{
+                        font-family: 'montserrat' !important;
+                    }
+                    .contents img{
+						width: 100%;
+					}</style><div class="col-md-8 contents" style="padding-left:50px"><h5 class="dmdv1" style="color:#0b3262;     text-transform: uppercase">Thử nghiệm và kiểm nghiệm</h5></div></div></div></section><section class="contact_email" style="background-image: url('/src/image/Rectangle_58.png'); background-size:cover; padding:30px 0"><div class="container"><div class="row"><div class="col-md-3"><input type="text" class="form-control" placeholder="Email"></div><div class="col-md-3"><button style="width: 100%; background-color:#ff0000; color:#fff" type="submit" class="btn mb-2">NHẬN THÔNG TIN >></button></div><div class="col-md-4"><p style="color:#fff; padding-top:10px">ĐĂNG KÝ ĐỂ NHẬN THÔNG TIN TƯ VẤN</p></div></div></div></section><section class="footer" style="border-top:2px solid #ff0000"><div class="container"><div class="row"><div class="col-md-12"><a href="/"><img src="/img/logo.png"></a><div style="height: 30px"></div></div><div class="col-md-4"><div class="f-text"><h6>CÔNG TY CỔ PHẦN VINAVERITAS</h6><img style="width: 100%" src="/src/image/Rectangle53.png"><div style="height: 30px"></div><p><strong style="font-family: 'montserrat1'">Địa chỉ</strong>: Số PF04 - PF06A tầng lửng, Khu 3 (Lô 1.3.1) Toà nhà Topaz 2, 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p><p><b style="font-family: 'montserrat1'">Điện thoại:</b>(+84) 028 3514 9708 * <b style="font-family: 'montserrat1'">Fax:</b> (+84) 028 3514 9709</p><p><b style="font-family: 'montserrat1'">Email </b>: info@eic.com.vn</p></div></div><div class="col-md-4"><div class="f-text"><h6>VỀ VINAVERITAS</h6><img style="width: 100%" src="/src/image/Rectangle53.png"><div style="height: 30px"></div><p><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; TRANG CHỦ</a></p><p><a href="/gioi-thieu"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; GIỚI THIỆU</a></p><p><a href="/dich-vu"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; DỊCH VỤ</a></p><p><a href="/du-an"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp; DỰ ÁN</a></p></div></div><style>.footer a:hover {
 		                    color: #ff0000;
 		                    text-decoration: none;
 		                    background-color: transparent;
